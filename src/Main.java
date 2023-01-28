@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         String url = "jdbc:mysql://localhost:3306/testingFirstTime";
         String user="root";
-        String pass = "";
+        String pass = ""; // use the password of your user database server
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con =DriverManager.getConnection(url, user, pass);
         Statement st = con.createStatement();
@@ -19,7 +19,7 @@ public class Main {
             System.out.print(res.getInt(2));
             System.out.print("   ");
             System.out.print(res.getString(3));
-            System.out.println("");
+            System.out.println();
         }
         st.close();
         con.close();
