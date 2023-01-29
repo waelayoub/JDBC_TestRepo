@@ -16,7 +16,9 @@ par ex : "java -cp ./mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar tryin
 Statement vas exécuter les Querry et le résultat va être dans un objet ResultSet
 qu’on va itérer pour prendre les informations les convertir en java class comme int et String et les afficher. 
 
-NB : la fermeture de connection et de statement doit se faire explicitement.
+NB :
+* la fermeture de connection et de statement doit se faire explicitement.
+* Il faut avoir le serveur en fonctionnement avant l'exécution du code.
 
 <img width="304" alt="image" src="https://user-images.githubusercontent.com/64162771/215298077-132fd92f-cc7b-43f6-9e1b-5616a0afea4d.png">
 
